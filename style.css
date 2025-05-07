@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom styles for the page */
+
+h1, h2{
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;    
+}
+
+h1{
+    font-size: clamp(4.1rem, 5vw, 6rem);
+}
+
+h2{
+    font-size: clamp(3.1rem, 3vw, 4rem);
+}
+
+p, li, a{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+p{
+    font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+}
+
+
+
+/* navigation bar */
+#landing-page nav{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100vw;
+    gap: 25%;
+    padding-top: 10px;
+    background-color: #1b1b1b;
+}
+
+#landing-page nav img{
+    width: 180px;
+    height: auto;
+}
+
+#landing-page nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#landing-page .icons a img{
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
+header{
+    padding-bottom: 4.3%;
+}
+/* Landing page */
+
+#landing-page{
+    height: 100vh;
+    background-color: #1b1b1b;
+}
+
+#landing-page h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: #d43c00;
+}
+
+#landing-page p{
+    font-size: clamp(2.8rem, 2vw, 3.3rem);
+    text-align: center;
+    color: #ffffff;
+}
+
+#landing-page .title p:last-of-type{
+    font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+
+#landing-page .vinylimg img{
+    width: 45vw;
+    min-width: 375px;
+    height: auto;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+.title button{
+    background-color: #d43c00;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 999px;
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+}
+
+/* Vinyls section */
+#vinyls-players{
+    background-color: #d43c00;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#vinyls-players h2{
+    text-align: center;
+    padding: 20px 0;
+}
+.backdrop{
+    background: #1B1B1B;
+    background: linear-gradient(0deg, rgba(27, 27, 27, 1) 60%, rgba(212, 60, 0, 1) 60%);
+    width: 330px;
+}
+
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25px;
+    gap: 30px;
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.players p{
+    margin: 18px 0;
+}
+
+.backdrop img{
+    display: block;
+    margin: auto;
+}
+
+.backdrop img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
